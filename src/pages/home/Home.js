@@ -1,8 +1,15 @@
 import React from 'react'
 import Feature from '../../components/features/Feature'
+import './Home.css'
+import Chart from '../../components/chart/Chart'
+import xAxisData from '../../datas';
 
 export default function Home() {
   return (
-   <Feature/>
+    <div className='home'>
+      <Feature/>
+      <Chart grid title='Month sale' data={xAxisData} dataKey='sale'/>
+    </div>
+   
   )
 }
