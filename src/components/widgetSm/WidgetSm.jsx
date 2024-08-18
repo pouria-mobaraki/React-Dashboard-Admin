@@ -9,7 +9,7 @@ export default function WidgetSm() {
         <span className="widetSmTitle">New Join Members</span>
         <ul className="widgetSmList">
          {newMembers.map(user=>(
-           <li className="widgetSmListItem">
+           <li key={user.id} className="widgetSmListItem">
            <img src={user.img} alt="" className="widgetSmImg" />
            <div className="widgetSmUser">
                <span className="widgetSmUserName">{user.username}</span>

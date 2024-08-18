@@ -41,4 +41,39 @@ const newMembers = [
 
 ]
 
-export {xAxisData,newMembers}
+const transactions= [
+    {
+        id:1,
+        customer:'Pouria Mobaraki',
+        date:'27 Sep 2024',
+        amount:123,
+        status:'Declined',
+        img:'images/pro.jpg'
+    },
+    {
+        id:2,
+        customer:'Siavash  Padidar',
+        date:'12 jun 2024',
+        amount:243,
+        status:'Pending',
+        img:'images/pro.jpg'
+    },
+    {
+        id:3,
+        customer:'Parsa Payande',
+        date:'12 May 2024',
+        amount:731,
+        status:'Approved',
+        img:'images/pro.jpg'
+    },
+    {
+        id:4,
+        customer:'Kambiz Esfarayeni',
+        date:'19 Aug 2024',
+        amount:524,
+        status:'Declined',
+        img:'images/pro.jpg'
+    },
+]
+
+export {xAxisData,newMembers,transactions}
