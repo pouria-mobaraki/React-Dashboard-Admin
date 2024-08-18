@@ -13,4 +13,32 @@ let xAxisData = [
     {name : 'Nov', sale:66_000},
 ]
 
-export default xAxisData
+const newMembers = [
+    {
+        id:1,
+        username:"Pouria Mobaraki",
+        title:"Developer",
+        img: "images/pro.jpg"
+    },
+    {
+        id:2,
+        username:"Ali Boroumand",
+        title:"QA Engineer",
+        img: "images/pro.jpg"
+    },
+    {
+        id:3,
+        username:"Ali Moqtazi",
+        title:"Manager",
+        img: "images/pro.jpg"
+    },
+    {
+        id:4,
+        username:"Aref",
+        title:"Hacker",
+        img: "images/pro.jpg"
+    }
+
+]
+
+export {xAxisData,newMembers}
