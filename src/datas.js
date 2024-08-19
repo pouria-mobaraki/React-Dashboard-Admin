@@ -76,4 +76,47 @@ const transactions= [
     },
 ]
 
-export {xAxisData,newMembers,transactions}
+let userRows = [
+    {
+        id:1,
+        username:'Pouria Mobaraki',
+        avatar: 'images/pro.jpg',
+        status: 'active',
+        transaction:'$722.34',
+        email: 'ss_pooria69@yahoo.com'
+    },
+    {
+        id:2,
+        username:'Arian Safari',
+        avatar: 'images/pro.jpg',
+        status: 'active',
+        transaction:'$129.52',
+        email: 'ss_pooria69@yahoo.com'
+    },
+    {
+        id:3,
+        username:'Reza Minae',
+        avatar: 'images/pro.jpg',
+        status: 'active',
+        transaction:'$72.34',
+        email: 'ss_pooria69@yahoo.com'
+    },
+    {
+        id:4,
+        username:'Hasan Mahyar',
+        avatar: 'images/pro.jpg',
+        status: 'active',
+        transaction:'$129.52',
+        email: 'ss_pooria69@yahoo.com'
+    },
+    {
+        id:5,
+        username:'Amir Aghae',
+        avatar: 'images/pro.jpg',
+        status: 'active',
+        transaction:'$155.52',
+        email: 'ss_pooria69@yahoo.com'
+    },
+]
+
+export {xAxisData,newMembers,transactions,userRows}
