@@ -59,12 +59,12 @@ export default function UsersList() {
     width:150,
     renderCell:(params)=>{
       return (
-        <>
+        < div className="editDeleteContainer">
         <Link to={`/user/${params.row.id}`} className="link">
           <button className='userListEdit'>Edit</button>
         </Link>
         <DeleteOutline className='userListDelete' onClick={()=>userDelete(params.row.id)}/>
-        </>
+        </div>
       )
     }
   }

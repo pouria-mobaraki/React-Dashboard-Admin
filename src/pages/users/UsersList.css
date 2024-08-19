@@ -24,4 +24,12 @@ cursor: pointer;
 .userListDelete {
     color: red;
     cursor: pointer;
+    
+   
+}
+
+.editDeleteContainer{
+    display: flex;
+    align-items: center;
+    
 }
