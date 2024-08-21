@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Chart from '../../components/chart/Chart'
 import { productsData } from '../../datas'
+import { Publish } from '@mui/icons-material'
 import "./Product.css"
 
 export default function Product() {
   return (
     <div className='product'>
+
         <div className="productTitleContainer">
             <h1 className="productTitle">Product</h1>
              <Link to="/newProduct">
@@ -22,7 +24,7 @@ export default function Product() {
 
             <div className='productTopRight'>
               <div className="productInfoTop">
-                <img src="images/Asus.jpg" alt="laptop"  className="productInfoImg"/>
+                <img src="/images/Asus.jpg" alt="laptop"  className="productInfoImg"/>
                 <span className="productName">Asus Laptop</span>
               </div>
 
@@ -58,6 +60,42 @@ export default function Product() {
               </div>
 
             </div>
+        </div>
+
+        <div className="productBottom">
+          <form action="" className="productForm">
+        <div className="productFormLeft">
+          <label htmlFor="">Product Name</label>
+          <input type="text" placeholder='Asus laptop' />
+
+          <label htmlFor="">In Stock</label>
+          <select name="" id="inStock">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label htmlFor="">Active</label>
+          <select name="" id="inStock">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          </select>
+        </div>
+
+        <div className="productFormRight">
+        <div className="productUploader">
+          <img src="/images/Asus.jpg" alt="" className="productUploaderImg" />
+          <label htmlFor="">
+            <Publish />
+          </label>
+          <input type="file" style={{display:'none'}} />
+        </div>
+
+        <button className="productButton">Uploader(Edit)</button>
+
+        </div>
+        
+       
+          </form>
         </div>
     </div>
   )
